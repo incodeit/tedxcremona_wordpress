@@ -263,10 +263,34 @@ textarea {
 
 
 
-
+* {
+  font-family: 'Puritan', sans-serif;
+}
 
 html, 
 body,
 body > .container {
   height: 100%;
+}
+
+
+#info {
+  display: flex;
+  align-items: center;
+}
+
+#x {
+  z-index: 1;
+}
+
+#info h1{
+  margin-left: -100px;
+  white-space: nowrap;
+  font-size: 60px;
+  padding-top: 70px;
+  padding-left: 140px;
+  background-image: url("../img/Tavola da disegno 4.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 150px;
 }
