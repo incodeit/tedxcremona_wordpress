@@ -264,33 +264,143 @@ textarea {
 
 
 * {
-  font-family: 'Puritan', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
-html, 
-body,
-body > .container {
-  height: 100%;
-}
 
 
 #info {
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 #x {
   z-index: 1;
 }
 
-#info h1{
-  margin-left: -100px;
-  white-space: nowrap;
-  font-size: 60px;
-  padding-top: 70px;
-  padding-left: 140px;
+#x,
+#info .content {
+  text-align: center;
+}
+
+#info .content{
   background-image: url("../img/Tavola da disegno 4.png");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center -30px;
+  padding-top: 120px;
   background-size: 150px;
+  
+}
+
+#info h1, 
+#info h2 {
+  text-align: center;
+  white-space: nowrap;
+}
+
+#info h1 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+#info h2 {
+  font-size: 1em;
+}
+
+.red {
+  color: #ff2f00;
+}
+
+ul#social-icons, 
+ul#social-icons li {
+  padding: 0;
+  margin: 0;
+}
+
+ul#social-icons li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+ul#social-icons li a i{
+  color: #aaa;
+  font-size: 1.4em;
+}
+
+ul#social-icons li a:hover i{
+  color: #ff2f00;
+}
+
+#img-x {
+  height: 300px;
+}
+
+#img-tedx {
+  width: 200px;
+}
+
+
+@media only screen and (min-width: 576px) {
+  html, 
+  body,
+  body > .container {
+    height: 100%;
+  }
+
+  #img-x, #img-tedx {
+    height: auto;
+    width: auto;
+  }
+  
+  #info .content{
+    padding: 0;
+    padding-top: 120px;
+    background-position: center top;
+    background-size: 120px;
+  }
+
+
+  #info h1 {
+   font-size: 1.1em;
+  }
+
+}
+
+
+@media only screen and (min-width: 992px) {
+  #info .content{
+    background-size: 160px;
+    background-position: top left;
+    margin-left: -100px;
+    padding-left: 160px;
+    padding-top: 80px;
+    text-align: left;
+  }
+  #info h1, #info h2 {
+    text-align: left;
+  }
+
+  #info h1 {
+   font-size: 1.4em;
+  }
+
+  #info h2 {
+   font-size: 1.2em;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  #info h1 {
+   font-size: 1.8em;
+  }
+
+  #info h2 {
+   font-size: 1.4em;
+  }
+
+  ul#social-icons li a i{
+    font-size: 2em;
+  }
 }
