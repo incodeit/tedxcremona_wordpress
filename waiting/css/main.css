@@ -300,12 +300,12 @@ textarea {
 }
 
 #info h1 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-transform: uppercase;
 }
 
 #info h2 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .red {
@@ -337,7 +337,7 @@ ul#social-icons li a:hover i{
 }
 
 #img-tedx {
-  width: 200px;
+  width: 150px;
 }
 
 
@@ -347,11 +347,6 @@ ul#social-icons li a:hover i{
   body > .container {
     height: 100%;
   }
-
-  #img-x, #img-tedx {
-    height: auto;
-    width: auto;
-  }
   
   #info .content{
     padding: 0;
@@ -360,21 +355,25 @@ ul#social-icons li a:hover i{
     background-size: 120px;
   }
 
-
   #info h1 {
-   font-size: 1.1em;
+   font-size: 1.3em;
   }
+
+  #img-x{
+    height: auto;
+  }
+
 
 }
 
 
 @media only screen and (min-width: 992px) {
   #info .content{
-    background-size: 160px;
+    background-size: 130px;
     background-position: top left;
     margin-left: -100px;
-    padding-left: 160px;
-    padding-top: 80px;
+    padding-left: 125px;
+    padding-top: 70px;
     text-align: left;
   }
   #info h1, #info h2 {
@@ -382,25 +381,41 @@ ul#social-icons li a:hover i{
   }
 
   #info h1 {
-   font-size: 1.4em;
-  }
-
-  #info h2 {
-   font-size: 1.2em;
-  }
-}
-
-
-@media only screen and (min-width: 1200px) {
-  #info h1 {
    font-size: 1.8em;
   }
 
   #info h2 {
    font-size: 1.4em;
   }
+  
+  #img-tedx {
+    width: 200px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  #info .content{
+    background-size: 140px;
+    padding-left: 137px;
+    padding-top: 73px;
+  }
+
+
+  #info h1 {
+   font-size: 2.2em;
+  }
+
+  #info h2 {
+   font-size: 1.6em;
+  }
 
   ul#social-icons li a i{
     font-size: 2em;
+  }
+
+  #img-tedx {
+    width: 250px;
   }
 }
