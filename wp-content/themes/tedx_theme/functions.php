@@ -36,6 +36,10 @@ function tedx_theme_setup() {
 		'default-color' => 'FFFFFF',
 		'default-image' => '',
 	)));
+
+	// Add image sizes
+	add_image_size('1440w', 1440);
+	add_image_size('1920w', 1920);
 }
 endif;
 add_action( 'after_setup_theme', 'tedx_theme_setup' );
@@ -124,3 +128,9 @@ function cc_mime_types($mimes) {
   return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+
+function max_srcset_image_width() {
+	return 1920;
+}
+add_filter( 'max_srcset_image_width', 'max_srcset_image_width', 10 , 2 );

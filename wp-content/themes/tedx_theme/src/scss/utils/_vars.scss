@@ -1,10 +1,11 @@
 /* FONTS
    ----------------------------- */
-$sans-serif: 'Helvetica', 'Arial', sans-serif;
+$sans-serif: 'Inter', 'Arial', sans-serif;
 
 /* SPACINGS
    ----------------------------- */
 $main-font-size: 16px;
+$font--220: 2.25rem; //36px
 $font--200: 2rem; //32px
 $font--150: 1.5rem; //24px
 $font--140: 1.4rem; //21px
@@ -21,6 +22,8 @@ $bar-spacing: .5rem;
 
 /* COLORS
    ----------------------------- */
+$c--black: #393939;
+$c--primary: #E2261C;
 
 /* ANIMATION
    ----------------------------- */

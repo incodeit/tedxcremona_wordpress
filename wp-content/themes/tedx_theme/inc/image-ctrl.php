@@ -44,3 +44,13 @@ function print_image($id, $template_size, $ratio, $classes) {
 		$image .= '<img class="lazy fluid ' . $classes . ' " src="' . $img_placeholder . '" data-lazy="' . $img_default . '" alt=""></picture>';
 	return $image;
 }
+
+// ------------------------------------ //
+// THE RETURN OF ULTIMATE IMAGE CONTROLLER
+// ------------------------------------ //
+function responsive_image($img, $classes) {
+	$ID = $img['ID'];
+	$sizes = esc_attr(wp_get_attachment_image_srcset($ID));
+	$image = '<img class="'. $classes .'" src="'. $img['url'] .'" srcset="'. $sizes .'" alt="'. $img['alt'] .'">';
+	return $image;
+}
