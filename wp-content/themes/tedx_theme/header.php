@@ -21,6 +21,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<?php get_template_part('template-parts/header', 'main') ?>
 		<main id="main" class="site" data-template="<?php echo get_current_template() ?>">
 			<div id="loader" class="fixed top-0 left-0 bottom-0 right-0 z2"></div>
-			<?php get_template_part('template-parts/header', 'main') ?>

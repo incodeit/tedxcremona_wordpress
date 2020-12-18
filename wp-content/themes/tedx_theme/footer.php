@@ -10,10 +10,9 @@
  */
 
 ?>
-
-			<?php get_template_part('template-parts/footer', 'main') ?>
 			<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?v=weekly&key=YOUR-KEY-HERE"></script> -->
 		</main>
+		<?php get_template_part('template-parts/footer', 'main') ?>
 		<?php wp_footer(); ?>
 	</body>
 </html>
