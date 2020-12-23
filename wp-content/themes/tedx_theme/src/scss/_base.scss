@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: geometricPrecision;
+  color: $c--black;
 }
 
 * {
@@ -38,7 +39,7 @@ img {
     opacity: .1;
     transition: opacity 0.6s 0.05s ease;
     image-rendering: pixelated;
-    
+
     &.loaded {
       opacity: 1;
       image-rendering: auto;

@@ -65,8 +65,8 @@ define( 'WP_CACHE_KEY_SALT', '!#MT)bB.2+F{06bbS6po<{30S]+HF]^2Cwmy^;Rrbm)>.P^h0^
 $table_prefix = 'hHHEZHR2_';
 
 
-define('WP_HOME','http://localhost/tedx_website');
-define('WP_SITEURL','http://localhost/tedx_website');
+define('WP_HOME','http://localhost/tedxcremona_wordpress');
+define('WP_SITEURL','http://localhost/tedxcremona_wordpress');
 define('FS_METHOD','direct');
 define('WP_MEMORY_LIMIT', '256M');
 define('WPCF7_AUTOP', false);
