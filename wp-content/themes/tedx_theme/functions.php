@@ -63,8 +63,15 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/utils.php';
 require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/custom-post-type.php';
-require get_template_directory() . '/inc/custom-taxonomy.php';
+
+require get_template_directory() . '/inc/custom-post-type-event.php';
+require get_template_directory() . '/inc/custom-post-type-person.php';
+require get_template_directory() . '/inc/custom-post-type-highlight.php';
+require get_template_directory() . '/inc/custom-post-type-partner.php';
+
+//require get_template_directory() . '/inc/custom-taxonomy.php';
+
+
 require get_template_directory() . '/inc/image-ctrl.php';
 
 // ------------------------------------ //
