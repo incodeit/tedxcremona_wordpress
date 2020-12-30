@@ -49,12 +49,21 @@ add_action( 'after_setup_theme', 'tedx_theme_setup' );
 // ------------------------------------ //
 function yam112003_scripts() {
 	$timestamp = current_time('timestamp');
+	//wp_enqueue_script('fontawesome-script', 'https://kit.fontawesome.com/14aa3b4085.js', array(), $timestamp );
 	wp_enqueue_style('main-style', get_template_directory_uri() . '/dist/css/index.css', array(), $timestamp);
 	wp_enqueue_script('vendor-script', get_template_directory_uri() . '/dist/bundle.js', array(), $timestamp, true );
-
 	wp_localize_script('vendor-script', 'directory_uri', array('template_uri' => get_template_directory_uri()));
 }
 add_action( 'wp_enqueue_scripts', 'yam112003_scripts' );
+
+/* 
+add_filter('script_loader_src','fontawesome_include',10,2);
+function fontawesome_include($src, $handle){
+    if ($handle != 'fontawesome-script') 
+            return $src;
+    return $src."' id='fontawesome-script' crossorigin='anonymous";
+}
+*/
 
 // ------------------------------------ //
 // REQUIRE
@@ -104,7 +113,8 @@ if( function_exists('acf_add_options_page') ) {
 // DEBUG
 // ------------------------------------ //
 function dbg($obj) {
-	print("<pre>".print_r($obj, TRUE)."</pre>");
+	
+	print("<pre>".htmlentities(print_r($obj, TRUE))."</pre>");
 }
 
 // ------------------------------------ //

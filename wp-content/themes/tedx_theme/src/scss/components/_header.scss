@@ -17,6 +17,12 @@
   &.sticky-hide {
     // Something when scroll to bottom
   } 
+
+  &.ted-navbar {
+    height: 120px;
+    background-color: white;
+    border-bottom: 1px solid #C4C4C4;
+  }
 }
 
 /* HEADER OFFCANVAS

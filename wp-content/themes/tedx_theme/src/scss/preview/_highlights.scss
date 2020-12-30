@@ -1,0 +1,23 @@
+.preview--highlight {
+    .preview-background-color {
+        background-color: $c--primary;
+        height: calc((100vh -120px )/ 2);
+    }
+    .title{
+        font-size: $font--260;
+        text-align: right;
+        p {
+            line-height: 4.5rem;
+            display: inline;
+            background-color: white;
+            color: $c--primary;
+        }
+        
+    }
+
+    .abstract {
+        font-size: $font--150;
+        color: white
+        
+    }
+}
