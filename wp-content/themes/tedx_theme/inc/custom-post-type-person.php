@@ -50,7 +50,7 @@ function custom_post_type_person() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);
-	register_post_type('Person', $args);
+	register_post_type('person', $args);
 
 }
 

@@ -6,12 +6,15 @@
     padding-right: 10vw;
     padding-left: 10vw;
     .carousel-item {
-        
+
+        a {
+            color: $c--black;
+            text-decoration: none;
+        }
+
         p {
             font-size: $font--120;
             font-style: italic;
-            padding-right: 15%;
-            padding-left: 15%;
         }
 
         h1 {
@@ -28,4 +31,10 @@
         width: 370px;
         height: auto;
     }
+    @media only screen and (max-width: 600px) {
+        img {
+          width: 270px;
+        }
+      }
 }
+

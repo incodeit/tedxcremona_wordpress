@@ -26,7 +26,7 @@ endif;
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'tedxcremona_wordpress_2' );
+define( 'DB_NAME', 'tedxcremona_wordpress' );
 
 /** MySQL database username */
 define( 'DB_USER', 'root' );

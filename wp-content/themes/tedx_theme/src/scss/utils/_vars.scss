@@ -5,10 +5,10 @@ $sans-serif: 'Inter', 'Arial', sans-serif;
 /* SPACINGS
    ----------------------------- */
 $main-font-size: 16px;
-$font--280: 3.25rem; //36px
-$font--260: 3rem; //36px
-$font--240: 2.75rem; //36px
-$font--220: 2.50rem; //36px
+$font--280: 3.25rem; //52px
+$font--260: 3rem; //48px
+$font--240: 2.75rem; //44px
+$font--220: 2.25rem; //36px
 $font--200: 2rem; //32px
 $font--150: 1.5rem; //24px
 $font--140: 1.4rem; //21px
@@ -26,6 +26,8 @@ $bar-spacing: .5rem;
 
 /* COLORS
    ----------------------------- */
+$c--navbar: white;
+$c--navbar-shadow: #C4C4C4;
 $c--black: #393939;
 $c--primary: #EE452E;
 $c--beige: #F5F5F5;

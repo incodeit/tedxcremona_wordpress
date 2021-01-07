@@ -1,12 +1,11 @@
 <?php
   $highlight = get_sub_field('highlights_reference');
-  $hero_image = get_sub_field('hero_image');
   if($highlight):
 ?>
 
 <section class="section section--hero">
-  <ul class="section__container m0 p0 list-reset">
-    <?php echo responsive_image($hero_image,'contain-image'); ?>
+  <ul class="section__container m0 pt0 list-reset">
+  <?php include(locate_template('template-parts/template-section-hero.php')); ?>
     <?php foreach( $highlight as $post ): 
         setup_postdata($post); ?>
         <li class="section__item">

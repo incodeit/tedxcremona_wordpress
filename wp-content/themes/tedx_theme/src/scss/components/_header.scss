@@ -19,10 +19,10 @@
   } 
 
   &.ted-navbar {
-    height: 120px;
-    background-color: white;
-    border-bottom: 1px solid #C4C4C4;
+    background-color: $c--navbar;
+    border-bottom: 1px solid $c--navbar-shadow;
   }
+  
 }
 
 /* HEADER OFFCANVAS
@@ -95,6 +95,8 @@
       a {
         @extend .inline-block;
         text-decoration: none;
+        font-size: $font--120;
+        font-weight: bold;
       }
     }
   }

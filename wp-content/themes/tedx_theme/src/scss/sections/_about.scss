@@ -2,20 +2,21 @@
   ----------------------------- */
 
 .section--about {
+  
   background: $c--beige;
   .section,
   .section__about-container {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    .section__abstract-wrapper {
+      border-left: 2px solid $c--primary;
+      .section__abstract {
+        font-size: $font--120;
+        font-weight: lighter;
+        line-height: $font--150;
+    }
+    }
+    .section__title {
+      color: $c--primary;
+      font-size: $font--220;
+    }
   }
-
-  .section__title {
-    color: $c--primary;
-    font-size: $font--220;
-  }
-
-  .section__abstract {
-    font-size: $font--150;
-  }
-
 }

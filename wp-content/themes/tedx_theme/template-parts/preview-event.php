@@ -19,6 +19,6 @@
                 </a>
             </h1>
             <p><?php echo $text; ?></p>
-            <h5><?php echo ("Dal ".$date_from." al ".$date_to); ?></h5>
+            <h5><?#php echo ("Dal ".$date_from." al ".$date_to); ?></h5>
     </div>
 </div>

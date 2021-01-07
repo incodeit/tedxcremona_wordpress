@@ -3,14 +3,14 @@
 ?>
 
 <header class="header header--main fixed fluid left-0 ted-navbar" role="banner">
-  <div class="header__inner max-width-5 mx-auto flex flex-wrap py2">
+  <div class="header__inner max-width-5 mx-auto flex flex-wrap pt3 pb3">
     <div class="header__logo-wrapper col-6 md-col-4 px2">
       <a class="header__logo inline-block" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
         <img class="contain-image" src="<?php echo $logo; ?>"/>
       </a>
     </div>
 
-    <div class="header__menu-wrapper col-8 px2 xs-hide sm-hide">
+    <div class="header__menu-wrapper col-8 px2 xs-hide sm-hide pt1">
       <nav class="header__nav" role="navigation">
         <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'menu menu--primary m0 p0 right block--navbar')); ?>
       </nav>
