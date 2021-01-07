@@ -1,0 +1,59 @@
+/* FORM
+  ----------------------------- */
+body {
+ 
+}
+.section--contact{
+
+  .section__contact-form {
+    .wpcf7 {
+      text-align: center;
+      
+      form.wpcf7-form.init {
+        
+        label {
+          padding-top: .5rem;
+          padding-bottom: .5rem;
+          display: block;
+        }
+
+        input.wpcf7-submit {
+          border: none;
+          font-weight: bold;
+          font-size: $font--80;
+          color: white;
+          background: $c--primary;
+          padding: 1rem 2rem 1rem 2rem;
+          &:disabled {
+            background-color:lighten($c--primary, 5);
+          }
+        }
+        input {
+          padding: .5rem 1rem .5rem 1rem;
+          &::placeholder {
+            color: $c--black;
+          }
+        }
+        textarea {
+          padding: 1rem 1rem 1rem 1rem;
+          &::placeholder {
+            font-family: Arial, Helvetica, sans-serif;
+            color: $c--black;
+          }
+        }
+        
+      }
+    }
+    .section__contact-item {
+      margin-top: 1rem;
+      text-align: center;
+    }
+      
+      
+      .wpcf7 .form {
+        label {
+          background: purple;
+        }
+    }
+      }
+}
