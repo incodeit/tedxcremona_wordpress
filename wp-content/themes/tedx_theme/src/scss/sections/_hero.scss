@@ -4,11 +4,14 @@
 
 .section--hero {
 
+  &.section--ted-circle {
+    background-color: $c--primary;
+  }
+
   .section__container {
 
-    .contain-image{
-      
-    height: calc((100vh - 120px)/2);  
+    .contain-image {
+      max-height: calc((100vh - 180px)/2);  
     }
   }
 }

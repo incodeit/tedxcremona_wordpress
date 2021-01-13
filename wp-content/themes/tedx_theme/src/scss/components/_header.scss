@@ -23,6 +23,30 @@
     border-bottom: 1px solid $c--navbar-shadow;
   }
   
+  ul {
+   
+
+    li {
+      @extend .relative;
+      @extend .inline-block;
+      @extend .list-reset;
+      @extend .px1;
+      transition: all .8s $cubic-bezier; 
+      @media #{$breakpoint-md-mx} {
+        opacity: 0;
+        left: 1rem;
+        width: 100%;
+      }
+  
+      a {
+        
+        @extend .inline-block;
+        text-decoration: none;
+        font-size: $font--120;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 /* HEADER OFFCANVAS
@@ -74,30 +98,7 @@
 
 /* MENU PRIMARY
   ----------------------------- */
-.menu--primary {
-  ul {
-    @extend .m0;
-    @extend .p0;
-
-    li {
-      @extend .relative;
-      @extend .inline-block;
-      @extend .list-reset;
-      @extend .px1;
-      transition: all .8s $cubic-bezier; 
+#menu-main-menu {
   
-      @media #{$breakpoint-md-mx} {
-        opacity: 0;
-        left: 1rem;
-        width: 100%;
-      }
-  
-      a {
-        @extend .inline-block;
-        text-decoration: none;
-        font-size: $font--120;
-        font-weight: bold;
-      }
-    }
-  }
 }
+

@@ -2,7 +2,7 @@
     <?php 
     $thumbnail_image = get_the_post_thumbnail_url();
     if($thumbnail_image): ?>
-        <img class="contain-image" src="<?php echo $thumbnail_image; ?>" alt="">
+        <img class="contain-image max-width-1 mx-auto flex pt3" src="<?php echo $thumbnail_image; ?>" alt="">
     <?php endif;
 ?>
 </div>

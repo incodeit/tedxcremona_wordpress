@@ -13,12 +13,18 @@
                     <?php echo $thumbnail_image; ?>
                 </a>
             </div>
-            <h1>
-                <a href="<?php echo get_the_permalink();?> ">
-                    <?php echo $title; ?>
-                </a>
-            </h1>
-            <p><?php echo $text; ?></p>
+            <div>
+                <h1>
+                    <a href="<?php echo get_the_permalink();?> ">
+                        <?php echo $title; ?>
+                    </a>
+                </h1>
+            </div>
+            
+            <div class="px4">
+                <p><?php echo $text; ?></p>
+            </div>
+            
             <h5><?#php echo ("Dal ".$date_from." al ".$date_to); ?></h5>
     </div>
 </div>

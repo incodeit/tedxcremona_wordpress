@@ -12,7 +12,7 @@
 
     <div class="header__menu-wrapper col-8 px2 xs-hide sm-hide pt1">
       <nav class="header__nav" role="navigation">
-        <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'menu menu--primary m0 p0 right block--navbar')); ?>
+        <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'menu menu--primary m0 p0 center block--navbar')); ?>
       </nav>
     </div>
 

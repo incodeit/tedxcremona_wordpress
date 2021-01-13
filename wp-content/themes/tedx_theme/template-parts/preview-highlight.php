@@ -1,29 +1,30 @@
-<div class="preview preview--highlight">
 <?php 
-    $text1 = get_field('highlight_text1');
-    $text2 = get_field('highlight_text2');
-    $link = get_field('highlight_text2');
-    $bg_color = get_field('highlight_background_color');
-    $thumbnail_image = get_the_post_thumbnail();
-    
+    $highlight = get_sub_field('highlights_reference');
 ?>
-
-    <div class="clearfix preview-background-color mb4">
-        <div class="col-12 center ">
-            <div class="col col-6  preview-background col-right">
-                <div class="col col-6  ">
-                    <div class="title">
-                         <?php echo $text1;?>
+<div class="preview preview--highlight">
+    <div class="clearfix preview-background-color">
+            <?php if( have_rows('preview_highlight') ): ?>
+                <?php while( have_rows('preview_highlight') ): the_row(); 
+                    $title = get_sub_field('text_1');
+                    $subtitle = get_sub_field('text_2');
+                    $bg_image = get_sub_field('image');
+                    $thumbnail = get_the_post_thumbnail();
+                    ?>
+                    <div class="pt3 pb4">
+                        <div class="preview__wrap-text right-align pr4">
+                            <div class="preview__title ">
+                                <?php echo $title; ?>
+                            </div>
+                            <div class="preview__subtitle ">
+                                <span class="subtitle__background"><?php echo $subtitle; ?></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="abstract">
-                        <p><?php echo $text2;?></p>
+                    <div class="preview__wrap preview__background ">
+                        <img class="" src="<?php echo get_the_post_thumbnail_url();?>" alt="img">
                     </div>
-                </div>
-                <div class="col col-6 preview-background-image">
-                    <?php print_r($thumbnail_image); ?>
-                </div>
-            </div>
-
-        </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
     </div>
 </div>
+<?php

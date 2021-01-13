@@ -6,16 +6,18 @@ body {
 .section--contact{
 
   .section__contact-form {
-    .wpcf7 {
+
+    .title {
+      font-size: $font--220;
+      color: $c--primary;
+    }
+    .wpcf7{
       text-align: center;
       
-      form.wpcf7-form.init {
-        
-        label {
-          padding-top: .5rem;
-          padding-bottom: .5rem;
-          display: block;
-        }
+      .wpcf7-response-output {
+        border-color: none;
+      }
+      form.wpcf7-form{
 
         input.wpcf7-submit {
           border: none;
@@ -35,6 +37,7 @@ body {
           }
         }
         textarea {
+          resize: none;
           padding: 1rem 1rem 1rem 1rem;
           &::placeholder {
             font-family: Arial, Helvetica, sans-serif;
@@ -48,12 +51,10 @@ body {
       margin-top: 1rem;
       text-align: center;
     }
+  }
+}
       
-      
-      .wpcf7 .form {
-        label {
-          background: purple;
-        }
-    }
-      }
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  border: 0px;
+  color: $c--primary;
 }

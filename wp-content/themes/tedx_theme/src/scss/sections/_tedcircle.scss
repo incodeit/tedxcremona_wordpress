@@ -1,0 +1,37 @@
+/* TED CIRCLE
+  ----------------------------- */
+.section__container {
+    h1 {
+        color: $c--primary;
+    }
+    p {
+        color:$c--black;
+        line-height: $font--180;
+    }
+}
+.section--promoted-ted-circle {
+
+    a {
+        text-decoration: none;
+        .section__ted-circle-title {
+            color: $c--primary;      
+            font-size: $font--220;      
+        }
+    }
+    .section__ted-circle-event-information {
+
+        .section__ted-circle-event-title {
+            color: $c--black;
+            font-weight: bold;
+            font-size: $font--150;
+        }
+
+        .section__ted-circle-event-date,
+        .section__ted-circle-event-subscription   {
+            font-weight: lighter;
+        }
+
+    }
+    
+    
+}
