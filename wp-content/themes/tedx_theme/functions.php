@@ -151,3 +151,17 @@ function max_srcset_image_width() {
 	return 1920;
 }
 add_filter( 'max_srcset_image_width', 'max_srcset_image_width', 10 , 2 );
+
+// ------------------------------------ //
+// ADD WIDGET
+// ------------------------------------ //
+
+function ourWidgetsInit(){
+
+	register_sidebar( array(
+		'name'=> 'Sidebar',
+		'id'=> 'sidebar1',
+	));
+}
+
+add_action('widgets_init', 'ourWidgetsInit');

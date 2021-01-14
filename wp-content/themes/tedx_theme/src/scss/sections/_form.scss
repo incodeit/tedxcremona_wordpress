@@ -1,5 +1,6 @@
 /* FORM
   ----------------------------- */
+
 body {
  
 }
@@ -20,21 +21,10 @@ body {
       form.wpcf7-form{
 
         input.wpcf7-submit {
-          border: none;
-          font-weight: bold;
-          font-size: $font--80;
-          color: white;
-          background: $c--primary;
-          padding: 1rem 2rem 1rem 2rem;
-          &:disabled {
-            background-color:lighten($c--primary, 5);
-          }
+          @include submit-button();
         }
         input {
-          padding: .5rem 1rem .5rem 1rem;
-          &::placeholder {
-            color: $c--black;
-          }
+          @include input-form();
         }
         textarea {
           resize: none;
