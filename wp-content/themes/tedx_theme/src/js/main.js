@@ -24,6 +24,7 @@ window.onload = () => {
 
   $('.event-carousel').slick({
     infinite: true,
+    dots: false,
     speed: 300,
     mobileFirst:true,
     slidesToShow: 1,
@@ -32,6 +33,7 @@ window.onload = () => {
     
     responsive: [{breakpoint: 1400,
       settings: {
+        dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
@@ -40,6 +42,7 @@ window.onload = () => {
     },
       {breakpoint: 1024,
       settings: {
+        dots: false,
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: false,
@@ -49,6 +52,7 @@ window.onload = () => {
     {
       breakpoint: 600,
       settings: {
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true
@@ -57,6 +61,7 @@ window.onload = () => {
     {
       breakpoint: 480,
       settings: {
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true

@@ -8,7 +8,9 @@
   $posts = get_posts($args);
   ?> 
   <section class="section section--team ">
-    <div class="section__team-container clearfix mx-auto max-width-5 flex flex-wrap">
+  <div class="container max-width-5 mx-auto">
+ 
+    <div class="section__team-container clearfix flex flex-wrap">
       <?php
       foreach ($posts as $post):?> 
         
@@ -18,6 +20,7 @@
       endforeach;
       wp_reset_postdata();
       ?> 
+    </div>
     </div>
   </section>
   <?php

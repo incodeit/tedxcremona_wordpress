@@ -4,7 +4,7 @@
     $title =get_sub_field('title');
 ?>
 
-<section class="section--promoted-ted-circle max-width-5 mx-auto mt4">
+<section class="section--promoted-ted-circle max-width-5 mx-auto mt4 p1">
     <div class="section__ted-circle-container center">
        <div class="section__ted-circle-event-thumbnail">
            <a href="<?php echo get_the_permalink($event->ID); ?>"><img class="contain-image max-width-1" src="<?php echo get_the_post_thumbnail_url($event->ID);?>" alt=""></a>
