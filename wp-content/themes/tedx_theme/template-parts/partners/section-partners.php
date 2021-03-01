@@ -12,22 +12,27 @@
         $posts = get_posts($args);
         if($posts):
         ?>
-          <div class="section__category-wrapper fluid mb4">
-            <?php  
+        <?php  
               if($description):?>
-              <h2 class="section__description center"> <?php echo $description; ?></h2>
+              <div>
+                <p class="section__description left p2 mt4"> <?php echo $description; ?></p>
+              </div>
               <?php 
               endif;?>
-              <ul class="section__list m0 p0">
+          <div class="section__category-wrapper fluid mb2">
+            
+              <div class="section__list flex flex-row m0  p0 mx-auto">
                 <?php 
                     foreach ($posts as $post):?> 
-                      <li class="section__item list-reset px2 center-align ">
-                        <?php get_template_part('template-parts/preview-main', 'partner'); ?>
-                      </li><?php
+                      <div class="section__item  mb4 px2 ">
+                        <div class="">
+                        <?php get_template_part('template-parts/preview', 'partner'); ?>
+                        </div>
+                    </div><?php
                     endforeach;
                     wp_reset_postdata();
                     ?> 
-              </ul>
+              </div>
           </div>
         <?php
         endif;
