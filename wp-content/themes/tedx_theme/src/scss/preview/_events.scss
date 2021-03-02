@@ -1,0 +1,40 @@
+.event-carousel  {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    .carousel-item {
+
+        a {
+            color: $c--black;
+            text-decoration: none;
+        }
+
+        p {
+            font-size: $font--120;
+            font-style: italic;
+        }
+
+        h1 {
+            font-size: $font--150;
+        }
+    }
+
+}
+
+.slick-slide {
+    outline: none;
+    img {
+        display: unset;
+        width: 370px;
+        height: auto;
+    }
+    @media only screen and (max-width: 600px) {
+        img {
+          width: 270px;
+        }
+      }
+}
+
