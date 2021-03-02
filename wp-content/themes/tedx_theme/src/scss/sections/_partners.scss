@@ -1,0 +1,27 @@
+/* PARTNERS
+  ----------------------------- */
+
+.section--partners {
+  
+    .section__description {
+        color: white;
+        font-size: $font--200;
+        font-weight: bold;
+        background: $c--primary;
+
+    }
+
+    .section__list {
+      background: $c--navbar;
+      align-items: center;
+      
+      .preview--partner {
+        max-width: 200px;
+      }
+
+
+      @media only screen and (max-width: 782px) {
+       flex-direction: column;
+      }
+    }
+}

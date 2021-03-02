@@ -1,0 +1,17 @@
+/* HERO
+  ----------------------------- */
+@import 'preview/highlights';
+
+.section--hero {
+
+  &.section--ted-circle {
+    background-color: $c--primary;
+  }
+
+  .section__container {
+
+    .contain-image {
+      max-height: calc((100vh - 180px)/2);  
+    }
+  }
+}

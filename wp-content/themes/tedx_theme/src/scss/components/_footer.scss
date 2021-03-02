@@ -1,0 +1,28 @@
+/* FOOTER MAIN
+  ----------------------------- */
+
+  .footer--main {
+    color: white;
+    background-color: $c--primary;
+
+    .footer__info {
+        font-weight: bold;
+        font-size: $font--80;
+    }
+
+    .contain-image {
+        width: 192px;
+    }
+
+    .footer__social-list {
+        padding-top: 3rem;
+    }
+  }
+
+
+  .block__item {
+
+    a {
+        color: white;
+    }
+  }

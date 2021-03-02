@@ -1,0 +1,50 @@
+/* FONTS
+   ----------------------------- */
+$sans-serif: 'Inter', 'Arial', sans-serif;
+
+/* SPACINGS
+   ----------------------------- */
+$main-font-size: 16px;
+$font--280: 3.25rem; //52px
+$font--260: 3rem; //48px
+$font--240: 2.75rem; //44px
+$font--220: 2.25rem; //36px
+$font--200: 2rem; //32px
+$font--180: 1.8rem; //29px
+$font--150: 1.5rem; //24px
+$font--140: 1.4rem; //21px
+$font--120: 1.125rem; //18px
+$font--80: .875rem; //14px
+$font--50: .5rem;  //8px
+
+$col--1: 8.33%;
+
+/* BAR
+   ----------------------------- */
+$bar-width: 1.5rem;
+$bar-height: 2px;
+$bar-spacing: .5rem;
+
+/* COLORS
+   ----------------------------- */
+$c--navbar: white;
+$c--navbar-shadow: #C4C4C4;
+$c--black: #393939;
+$c--primary: #E63822;
+$c--beige: #F5F5F5;
+
+/* ANIMATION
+   ----------------------------- */
+$cubic-bezier: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+/* MEDIA QUERIES
+   ----------------------------- */
+$breakpoint-sm-mx: '(max-width: 40em)'; // 640px
+$breakpoint-md-mx: '(max-width: 52em)'; // 832px
+$breakpoint-lg-mx: '(max-width: 64em)'; // 1024px
+$breakpoint-xl-mx: '(max-width: 78em)'; // 1248px
+
+/* ELEMENTS
+   ----------------------------- */
+
+$navbar_height: 7.5rem; //120px

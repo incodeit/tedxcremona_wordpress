@@ -1,0 +1,22 @@
+.block--form-button {
+    .max-width-5 {
+        max-width: 50rem;
+    }
+    .block__button-wrapper {
+        
+        
+        .block__button-element {
+
+            a {
+                background: white;
+                border: 2px solid $c--primary;
+                color: $c--primary;
+                font-size: $font--80;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            
+        }
+    }
+    
+}

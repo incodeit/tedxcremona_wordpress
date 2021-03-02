@@ -1,16 +1,10 @@
 <?php
 
-$local_config_file_name = 'wp-config-'.gethostname().'.php';
-$local_config_file_name = 'wp-config-local.php';
-$local_config_file_path = dirname(__FILE__) . '/'.$local_config_file_name;
-//print($local_config_file_path);
-if (file_exists($local_config_file_path)):
-	require_once($local_config_file_path);
+if (file_exists(dirname(__FILE__) . '/wp-config-local.php')) :
+	require_once(dirname(__FILE__) . '/wp-config-local.php');
 	return;
 endif;
 
-/** CONFIG MIEI */
-define('WPCF7_AUTOP', false );
 /**
  * The base configuration for WordPress
  *
@@ -32,24 +26,24 @@ define('WPCF7_AUTOP', false );
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'db_tedxcremona');
+define( 'DB_NAME', 'tedxcremona_wordpress' );
 
 /** MySQL database username */
-define( 'DB_USER', 'usrdb_tedxcremona');
+define( 'DB_USER', 'rktedxcr_wordpre' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'aP6XdC3X');
+define( 'DB_PASSWORD', '([R5hp&J(.9A' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'tedxcremona_db:3306');
+define( 'DB_HOST', '127.0.0.1' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8');
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '');
+define( 'DB_COLLATE', '' );
 
-/**#@+
+/**
  * Authentication Unique Keys and Salts.
  *
  * Change these to different unique phrases!
@@ -58,16 +52,15 @@ define( 'DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'a76364153ab59154c69b87ed12d45270def1781c');
-define( 'SECURE_AUTH_KEY',  'd5e64f4eedd09f73f233f43964805f5648fa7cb5');
-define( 'LOGGED_IN_KEY',    '9c81b7f749f365ef1d687b6f4902d6bfd861fc1d');
-define( 'NONCE_KEY',        'af84b8e0b81b1c6addd5a38301fd7c4ae024d92e');
-define( 'AUTH_SALT',        'fabca6e4657ceb43939ea1b861b8a245d332e4af');
-define( 'SECURE_AUTH_SALT', '1c2684056d7c217a5d160287f8bb5ffe3145d351');
-define( 'LOGGED_IN_SALT',   '161f6c00a04a859a441a581d2615d8d73aca0a60');
-define( 'NONCE_SALT',       '650c564eba09a3eb29a50afaf5b9911aeea2dfb6');
-
-/**#@-*/
+define( 'AUTH_KEY',          'C0zk]<G2hAmy*H[bJyg3Izwj/{&~%;o[G(Sdky!=.$TLuq0W+^1=cNf|ltm4.A4Y' );
+define( 'SECURE_AUTH_KEY',   '1g+NH0`O!/n#e^5(aZ<{;ki;I}{b=&-Y{B{5@>>8?:4-,f|8Qwj>0)#EH^8~:ELw' );
+define( 'LOGGED_IN_KEY',     ')ub|3#x*.c* RkOq^0db8/6Blca?4`Yq>=>A;>Yv(~M<R!{5Xj#}Npr_ys59eBd)' );
+define( 'NONCE_KEY',         'f y0Qo5C 3QRpZE= aTx!991:KU-MI)FK@2dl[a`[;-u%{{p}w/lV.~w_JzK#7B5' );
+define( 'AUTH_SALT',         '<<JE<fzp7vsW[du*ha4M-[,3eiYOYj]kMwFUq202- m@miNqSg%TS+M29>a8*wD3' );
+define( 'SECURE_AUTH_SALT',  ')x28 8X2;,E(ig~4uV6?7tS{m~[BeRawy]~a,id5 +1` lmfNJe?[IA5c({XR5xK' );
+define( 'LOGGED_IN_SALT',    '$V-I&)Dr3i$(_gZ}/~0)_V:-6ByY.4FxB-2:/M^Rrg;!(_M95C<_d*+HwRseDC3.' );
+define( 'NONCE_SALT',        '43sj< s[[c%96Thd>Ig2C6^+)!E~)acL`WnIYNTa7*-$?}x,COsYm>[68;c?-L%d' );
+define( 'WP_CACHE_KEY_SALT', '!#MT)bB.2+F{06bbS6po<{30S]+HF]^2Cwmy^;Rrbm)>.P^h0^ti[U8nXS $[FHa' );
 
 /**
  * WordPress Database Table prefix.
@@ -75,27 +68,16 @@ define( 'NONCE_SALT',       '650c564eba09a3eb29a50afaf5b9911aeea2dfb6');
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'hHHEZHR2_';
 
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- *
- * For information on other constants that can be used for debugging,
- * visit the Codex.
- *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
- */
-define( 'WP_DEBUG', false );
-define('FS_METHOD', 'direct');
-// If we're behind a proxy server and using HTTPS, we need to alert Wordpress of that fact
-// see also http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
-	$_SERVER['HTTPS'] = 'on';
-}
+
+define('WP_HOME','http://localhost/tedxcremona_wordpress');
+define('WP_SITEURL','http://localhost/tedxcremona_wordpress');
+define('FS_METHOD','direct');
+define('WP_MEMORY_LIMIT', '256M');
+define('WPCF7_AUTOP', false);
+define('WP_DEBUG', true);
+
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -105,4 +87,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Sets up WordPress vars and included files. */
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';
