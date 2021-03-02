@@ -3,6 +3,10 @@ html {
 }
 
 body {
+  .main-container {
+    background: white;
+  }
+  
   font-size: $main-font-size;
   font-family: $sans-serif;
   margin: 0;
@@ -13,6 +17,8 @@ body {
   text-rendering: geometricPrecision;
   color: $c--black;
 }
+
+
 
 * {
   box-sizing: border-box;

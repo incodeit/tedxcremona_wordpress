@@ -4,6 +4,16 @@
   @extend .top-0;
   z-index: 9;
 
+  .current-menu-item {
+    &::before {
+        content: "";
+        display: block;
+        padding: 0px 0;
+        line-height: 0px;
+        border-top: 7px solid $c--primary;
+        transform: translatey(-43px);
+    }
+  }
   .logged-in & {
     top: 2.1rem;
   }
@@ -17,20 +27,72 @@
   &.sticky-hide {
     // Something when scroll to bottom
   } 
+
+  &.ted-navbar {
+    background-color: $c--navbar;
+    border-bottom: 1px solid $c--navbar-shadow;
+  }
+  
+  ul {
+   
+
+    li {
+      @extend .relative;
+      @extend .inline-block;
+      @extend .list-reset;
+      @extend .px1;
+      transition: all .8s $cubic-bezier; 
+      @media #{$breakpoint-md-mx} {
+        opacity: 0;
+        left: 1rem;
+        width: 100%;
+      }
+  
+      a {
+        
+        @extend .inline-block;
+        text-decoration: none;
+        font-size: $font--120;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 /* HEADER OFFCANVAS
   ----------------------------- */
 .header--offcanvas {
+  
   background: #EEE;
+  list-style: none;
   z-index: 8;
-
+  text-align: center;
+  ul {
+    margin-top: 2rem;
+    padding-top: 4rem;
+    li {
+      @extend .list-reset;
+      font-size: $font--200;
+      color: $c--black;
+      line-height: 40px;
+      a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+      }
+    }
+    li.current_page_item {
+      color: $c--primary;
+    }
+  }
   &.open {
     li {
       opacity: 1;
       left: 0;
       right: 0;
       transition: all .8s .6s $cubic-bezier;
+      list-style-type: none;
+      
     }
   }
 
@@ -43,8 +105,9 @@
     &.open {
       @extend .px3;
       @extend .py4;
-      height: 100vh;
+      height: 50vh;
       transition: all .4s $cubic-bezier;
+      list-style-type: none;
     }
   }
 
@@ -57,6 +120,7 @@
       transition: all .8s .4s $cubic-bezier;
   
       &.open {
+        list-style-type: none;
         @extend .px2;
         @extend .pt3;
         #{$side}: 0;
@@ -68,28 +132,7 @@
 
 /* MENU PRIMARY
   ----------------------------- */
-.menu--primary {
-  ul {
-    @extend .m0;
-    @extend .p0;
-
-    li {
-      @extend .relative;
-      @extend .inline-block;
-      @extend .list-reset;
-      @extend .px1;
-      transition: all .8s $cubic-bezier; 
+#menu-main-menu {
   
-      @media #{$breakpoint-md-mx} {
-        opacity: 0;
-        left: 1rem;
-        width: 100%;
-      }
-  
-      a {
-        @extend .inline-block;
-        text-decoration: none;
-      }
-    }
-  }
 }
+

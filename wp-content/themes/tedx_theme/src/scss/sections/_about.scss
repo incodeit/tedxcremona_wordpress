@@ -2,20 +2,72 @@
   ----------------------------- */
 
 .section--about {
-  background: $c--beige;
+  margin: auto;
+  position: relative;
+  max-width: 80rem;
+  
+  
   .section,
-  .section__about-container {
-    padding-left: 10rem;
-    padding-right: 10rem;
+  .section__about-wrapper {
+    display: flex;
+    flex-direction: row;
+    .section__abstract-wrapper {
+      border-bottom: 2px solid $c--primary;
+      .section__abstract {
+        font-size: $font--120;
+        font-weight: lighter;
+        line-height: $font--150;
+    }
+    }
+    .section__title {
+      text-align: left;
+      color: $c--primary;
+      font-size: $font--220;
+      border-bottom: 2px solid $c--primary;
+      
+        &:before {
+          content:" ";
+          background-image: url("./../../../assets/title_image_x.png");
+          background-repeat: no-repeat;
+          left: 0;
+          top: calc(auto + 10px);
+          position: absolute;
+          height: 57px;
+          width: 55px;
+        }
+      
+     
+      
+    }
+
+    @media only screen and (max-width: 900px) {
+      display: unset;
+      .section__title {
+        width: 50%;
+          &:before {
+            transform: translateY(10px);
+            left: 15px;
+          }
+      }
+    }
+    @media only screen and (max-width: 423px) {
+      display: unset;
+      .section__title {
+        width: 100%;
+          &:before {
+            left: 250px;
+            transform: translateY(10px);
+          }
+      }
+    }
   }
 
-  .section__title {
-    color: $c--primary;
-    font-size: $font--220;
-  }
+}
 
-  .section__abstract {
-    font-size: $font--150;
+.section--decoration {
+  img {
+    object-fit: cover;
+    height: 100px;
   }
-
+  
 }
