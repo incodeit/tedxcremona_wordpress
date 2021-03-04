@@ -37,7 +37,7 @@ window.onload = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        
       }
     },
       {breakpoint: 1024,
@@ -46,7 +46,7 @@ window.onload = () => {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: false,
-        dots: true
+        
       }
     },
     {
@@ -55,7 +55,7 @@ window.onload = () => {
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true
+        
       }
     },
     {
@@ -64,7 +64,7 @@ window.onload = () => {
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true
+        
       }
     }
     // You can unslick at a given breakpoint now by adding:

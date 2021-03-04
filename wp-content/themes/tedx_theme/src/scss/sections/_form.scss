@@ -27,6 +27,7 @@ body {
           @include input-form();
         }
         textarea {
+          width: 321px;
           resize: none;
           padding: 1rem 1.75rem 1rem 1.75rem;
           &::placeholder {
