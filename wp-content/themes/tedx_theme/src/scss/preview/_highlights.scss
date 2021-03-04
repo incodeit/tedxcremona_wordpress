@@ -7,24 +7,47 @@
     }
     .preview__wrap-text,
     .preview__wrap-text.pr4 {
-        padding-right: 24rem;
+       
         .preview__title{
             font-size: $font--150;
-            text-align: right;
             div {
                 strong {
-                    background-color: white;
-                    color:$c--primary;
+                    background-color: $c--primary;
+                    color: white;
                 }
             }
         }
         .preview__subtitle {
+            font-weight: bold;
             font-size: $font--120;
             color: white;
             .subtitle__background {
-                background-color: white;
+                color: $c--primary;
             }
         }
+        @media screen and (max-width: 640px){
+            margin-top: 2rem;
+            margin-left: 11rem;
+            font-size: 15px;
+            margin-bottom: 15rem;
+
+            .preview__title {
+                letter-spacing: .6rem;
+                font-size: $font--140;
+            }
+        }
+        @media screen and (max-width: 400px){
+            margin-top: 2rem;
+            margin-left: 3rem;
+            font-size: 15px;
+            margin-bottom: 15rem;
+
+            .preview__title {
+                letter-spacing: .6rem;
+                font-size: $font--150;
+            }
+        }
+       
     }
     .preview__background {
        max-height: 100%;
