@@ -7,7 +7,7 @@
       <div class="event-carousel mb4">
           <?php foreach( $event as $post ): 
             setup_postdata($post); ?>
-            <div class="carousel-item mx-auto px2 ">
+            <div class="carousel-item mx-auto  ">
               <?php get_template_part('template-parts/preview', 'event'); ?>
             </div>
           <?php endforeach; ?>

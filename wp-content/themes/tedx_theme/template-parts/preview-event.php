@@ -7,9 +7,9 @@
         $text = get_the_content();
     ?>
     
-    <div class="clearfix preview-background-color">
+    <div class="clearfix preview-background-color px2">
             <div class="">
-                <a href="<?php echo get_the_permalink(); ?>">
+                <a class="image-contain" href="<?php echo get_the_permalink(); ?>">
                     <?php echo $thumbnail_image; ?>
                 </a>
             </div>
@@ -21,7 +21,7 @@
                 </h1>
             </div>
             
-            <div class="px4">
+            <div class="">
                 <p><?php echo $text; ?></p>
             </div>
             

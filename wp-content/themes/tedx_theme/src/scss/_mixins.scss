@@ -1,15 +1,16 @@
 /** SUBMIT BUTTON
 ***********************/
 @mixin submit-button {
+    
     border: none;
-            font-weight: bold;
-            font-size: $font--80;
-            color: white;
-            background: $c--primary;
-            padding: 1rem 2rem 1rem 2rem;
-            &:disabled {
-              background-color:lighten($c--primary, 5);
-            }
+    font-weight: bold;
+    font-size: $font--80;
+    color: white;
+    background: $c--primary;
+    padding: 1rem 2rem 1rem 2rem;
+    &:disabled {
+      background-color:lighten($c--primary, 5);
+    }
   }
 
 

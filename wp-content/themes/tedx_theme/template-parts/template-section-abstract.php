@@ -4,12 +4,13 @@
 ?>
 <section class="section section--abstract">
     <div class="section__container  m0 p2 pt4 pb4 max-width-5 mx-auto center">
-        <h1>
-            <?php echo $title; ?>
-        </h1>
-        <p>
+        <div class="section__highlight col-11 sm-col-8 md-col-6 mx-auto max-width-3">
+            <div class="preview__event-title center">
+                <h1><?php echo $title; ?></h1>
+            </div>
+            <div class="preview__event-description justify">
             <?php echo $text; ?>
-        </p>
-        
+            </div>
+        </div>   
     </div>
 </section>

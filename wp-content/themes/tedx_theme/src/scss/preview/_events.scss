@@ -1,40 +1,48 @@
 .event-carousel  {
-    display: flex;
-    width: 100vw;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    padding-right: 10vw;
-    padding-left: 10vw;
-    .carousel-item {
+    max-width: 80rem;
+        .carousel-item {
 
         a {
             color: $c--black;
             text-decoration: none;
         }
-
         p {
-            font-size: $font--120;
+            font-size: 14px;
             font-style: italic;
+            line-height: 1.5rem;
         }
-
         h1 {
-            font-size: $font--150;
+            font-size: 16px;
         }
     }
 
 }
 
 .slick-slide {
+    
     outline: none;
-    img {
+    img {        
+       
+        max-width: 18rem;
         display: unset;
-        width: 370px;
         height: auto;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1140px) {
         img {
-          width: 270px;
+          width: 250px;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        img {
+          width: 180px;
+        }
+      }
+      @media only screen and (max-width: 660px) {
+        img {
+          width: 150px;
         }
       }
 }
-

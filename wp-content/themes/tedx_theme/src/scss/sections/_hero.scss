@@ -11,22 +11,14 @@
 .section__event {
 
   .section__background {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
     div {
       background: $c--lightgray;      
     }
     
-    .section__highlight {
-      .preview__event-description {
-        p {
-          margin: 0;
-        }
-        column-count: 2;
-
-        @media screen and(max-width: 400px) {
-          column-count: 1;
-        }
-      }
-    }
+    
    
   }
   
@@ -42,7 +34,6 @@
   &.section--home-hero {
      .contain-image {
        max-height: 245px  !important;
-       padding-top: .8rem;
        
        
        @media screen and (max-width: 640px) {
@@ -80,8 +71,9 @@
 
 .section__line {
   overflow: hidden;
+  background-image: url('/assets/line.png');
   .line {
-    transform: translateX(-50%);
+    transform: translateX(-10%);
     margin-bottom: 5rem;
   }
 }

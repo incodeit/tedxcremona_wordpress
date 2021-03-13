@@ -30,12 +30,12 @@
   </div>
   </div>
   <div class="clearfix section__event mb4">
-    <div class=" container section__background col-12 mt3 mb4">
+    <div class=" container section__background col-12 mt4 mb4">
       <?php if( have_rows('preview_highlight') ): ?>
       <?php while( have_rows('preview_highlight') ): the_row();         
           $event_title = get_sub_field('title');
           $event_description = get_sub_field('description');?>        
-          <div class="section__highlight col-11 sm-col-8 md-col-6 mx-auto">
+          <div class="section__highlight col-11 sm-col-8 md-col-6 mx-auto max-width-3">
               <div class="preview__event-title center">
                   <h1><?php echo $event_title; ?></h1>
               </div>
@@ -48,11 +48,12 @@
       </div>
     </div>
   <?php wp_reset_postdata(); ?>
-  <div class="section__line" >
-  <img class="line" src="<?php echo $line; ?>" alt="">
-</div>
-
+  
 <?php endif ?>
-
+<div class="section__line" >
+  
+    <img class="line" src="<?php echo $line; ?>" alt="">        
+  
+</div>
 
 

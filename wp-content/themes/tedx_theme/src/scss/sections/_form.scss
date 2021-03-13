@@ -1,9 +1,7 @@
 /* FORM
   ----------------------------- */
 
-body {
- 
-}
+
 .section--contact{
 
   .section__contact-form {
@@ -13,23 +11,35 @@ body {
       color: $c--primary;
     }
     .wpcf7{
-      text-align: center;
+      @extend .max-width-2;
+      @extend .mx-auto;
+      .wpcf7-list-item {
+        margin: 0;
+      }
+     
       
+      .wpcf7-text, 
+      .wpcf7-textarea {
+        width: 100%;
+      }
       .wpcf7-response-output {
         border-color: none;
       }
+      .form__submit {
+        text-align: center;
+      }
       form.wpcf7-form{
-
+        
         input.wpcf7-submit {
           @include submit-button();
+          
         }
         input {
           @include input-form();
         }
         textarea {
-          width: 321px;
           resize: none;
-          padding: 1rem 1.75rem 1rem 1.75rem;
+          padding: 1rem 1rem 1rem 1rem;
           &::placeholder {
             font-family: Arial, Helvetica, sans-serif;
             color: $c--black;

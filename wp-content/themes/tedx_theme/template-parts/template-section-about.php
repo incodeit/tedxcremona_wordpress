@@ -6,13 +6,17 @@
                       $abstract = get_sub_field('abstract');
                   ?>
 
+                 
                   <div class="section__about-wrapper row mx-auto ">
                     <div class=" col-12 sm-col-4 right-align pr4 pt3">
                       <h3 class="section__title ">
                         <?php echo $title ?>
                       </h3>
                     </div>
-                    <div class=" col-12 sm-col-8 section__abstract-wrapper mt4 mx-auto ">
+                    <div class=" col-12 sm-col-8
+                    <?php if(is_page_template('page-templates/homepage.php')): ?> section__abstract-wrapper-home
+                    <?php else: ?> section__abstract-wrapper 
+                    <?php endif;?> mt4 mx-auto ">
                       <div class="section__abstract"><?php echo $abstract ?></div>
                     </div>
                   </div>

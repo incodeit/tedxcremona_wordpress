@@ -1,27 +1,31 @@
   <section class="section section--partners ">
-    <div class="section__container clearfix mx-auto max-width-5 flex flex-wrap">
+    <div class="section__container clearfix flex flex-wrap">
       <?php 
         while(have_rows('partner_list')): the_row();
         $description = get_sub_field('list_description');
         $cat_id = get_sub_field('partner_category')->term_id;
         global $wp_query;
         $args = array(
+          'orderby' => 'title',
+          'order' => 'ASC',
+          'showposts' => -1,
           'post_type'=> 'partner',
           'cat'=> $cat_id
+
         );
         $posts = get_posts($args);
         if($posts):
         ?>
         <?php  
               if($description):?>
-              <div>
+              <div class="mx-auto">
                 <p class="section__description left p2 mt4"> <?php echo $description; ?></p>
               </div>
               <?php 
               endif;?>
-          <div class="section__category-wrapper fluid mb2">
+          <div class="section__category-wrapper fluid mb2 mx-auto">
             
-              <div class="section__list flex flex-row m0  p0 mx-auto">
+              <div class="section__list flex flex-row m0  p0 justify-center ">
                 <?php 
                     foreach ($posts as $post):?> 
                       <div class="section__item  mb4 px2 ">

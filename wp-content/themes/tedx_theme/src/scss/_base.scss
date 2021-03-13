@@ -1,12 +1,13 @@
 html {
   font-size: 16px; // 1rem
+  a {
+    color: inherit;
+  }
 }
 
+
 body {
-  .main-container {
-    background: white;
-  }
-  
+    line-height: 140%;
   font-size: $main-font-size;
   font-family: $sans-serif;
   margin: 0;
@@ -20,6 +21,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.main-container {
+  background: white;
 }
 
 img {
@@ -140,4 +145,21 @@ img {
 
 .pb25 {
   padding-bottom: 2.5rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+div.wpcf7 .ajax-loader {
+	display: none;
+}  
+
+
+.box {
+  border: 1px solid red;
+}
+
+body.template2 .box{
+  border: none;
 }
