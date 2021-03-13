@@ -18,6 +18,6 @@
 
 
 <div class=" lg-col-6 md-col-6 sm-col-12 pt4 block__button-element mx4 pb2 pt2">
-            <form class='' action="<?php echo $sub_value['url']; ?>">
-            </form>
+<form class='' action="<?php echo $sub_value['url']; ?>">
+</form>
             
