@@ -1,79 +1,72 @@
 /* HERO
   ----------------------------- */
 @import 'preview/highlights';
-.homepage--hero {
-  margin-top: 10rem;
-  max-width: 45rem;
 
-  
+
+.section {
+  &--hero {
+    height: 84vh;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+
+    @media (min-width: 650px) {
+      height: 55vh;
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem;
+    }
+  }
 }
 
-.section__event {
 
+body:not(.home) {
+  .section {
+    &--hero {
+      height: 37vh;
+      padding-top: 2.25rem;
+      padding-bottom: 2.25rem;
+
+      @media (min-width: 650px) {
+        height: 55vh;
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+      }
+    }
+  }
+}
+
+
+.section__event {
   .section__background {
     margin-left: auto;
     margin-right: auto;
     max-width: 80rem;
     div {
-      background: $c--lightgray;      
+      background: $c--lightgray;
     }
-    
-    
-   
   }
-  
-  position: relative;
 
+    position: relative;
     background-color: $c--lightgray;
     h1 {
       color: $c--primary;
     }
-  
+
 }
 .section--hero {
   &.section--home-hero {
-     .contain-image {
-       max-height: 245px  !important;
-       
-       
-       @media screen and (max-width: 640px) {
-        max-height: 533px !important;
-        left: -50%;
-        margin-top: -4rem;
-        position: absolute;
 
-      }
-
-      @media screen and (max-width: 400px) {
-        max-height: 404px !important;
-        padding-top: -2.2rem;
-        left: 0%;
-        transform: translatey(22%);
-        margin-top: -5rem;
-        opacity: .3;
-        position: absolute;
-      }
-     }
-
-     
   }
   &.section--ted-circle {
     background-color: $c--primary;
   }
-
-  .section__container {
-
-    img {
-      max-height: calc((100vh - 180px)/2);  
-    }
-  }
 }
 
 .section__line {
+  width: 100%;
+  height: 2.5rem;
   overflow: hidden;
-  background-image: url('/assets/line.png');
-  .line {
-    transform: translateX(-10%);
-    margin-bottom: 5rem;
-  }
+  background: url('../assets/line.png') center center repeat-x;
+  background-size: auto;
+  margin-top: calc(1rem + 3vw);
+  margin-bottom: calc(1rem + 3vw);
 }

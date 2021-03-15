@@ -27,6 +27,10 @@ body {
   background: white;
 }
 
+h1 {
+  line-height: 116%;
+}
+
 img {
   @extend .align-top;
 
@@ -116,7 +120,7 @@ img {
 }
 
 .content-area {
-  margin-top: 3.53rem;
+  margin-top: 6.55rem;
 
   @media #{$breakpoint-md-mx} {
     margin-top: 4.4rem;
@@ -153,7 +157,7 @@ strong {
 
 div.wpcf7 .ajax-loader {
 	display: none;
-}  
+}
 
 
 .box {

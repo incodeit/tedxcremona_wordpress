@@ -17,7 +17,7 @@
         <div class="footer__info wysiwyg pt2"><?php echo $site_copyright ?></div>
       <?php endif ?>
     </div>
-    <div class="footer__social-list col col-12 md-col-6 px2 mb2 md-mb0 pr4 right-align">
+    <div class="footer__social-list col col-12 md-col-6 px2 mb2 md-mb0 md-pr4 right-align">
       <?php #wp_nav_menu(array('theme_location' => 'secondary', 'menu_class' => 'footer__menu')); ?>
       <?php get_template_part('template-parts/block', 'social'); ?>
     </div>

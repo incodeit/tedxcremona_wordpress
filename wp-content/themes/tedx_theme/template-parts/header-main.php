@@ -3,16 +3,16 @@
 ?>
 
 <header class="header header--main fixed fluid left-0 ted-navbar" role="banner">
-  <div class="header__inner max-width-5 mx-auto flex flex-wrap pt3 pb3">
+  <div class="header__inner max-width-5 mx-auto flex flex-wrap items-center pt1 md-pt3 pb1 md-pb3">
     <div class="header__logo-wrapper col-6 md-col-4 px2">
       <a class="header__logo inline-block" href="<?php echo esc_url(home_url('/')); ?>" rel="home">
         <img class="contain-image" src="<?php echo $logo; ?>"/>
       </a>
     </div>
 
-    <div class="header__menu-wrapper col-8 px2 xs-hide sm-hide pt1">
+    <div class="header__menu-wrapper col-8 px2 xs-hide sm-hide pb1">
       <nav class="header__nav" role="navigation">
-        <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'menu menu--primary m0 p0 center block--navbar')); ?>
+        <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'menu menu--primary m0 p0 right block--navbar')); ?>
       </nav>
     </div>
 
@@ -24,7 +24,7 @@
   </div>
 </header>
 
-<div class="header--offcanvas fixed top-0 md-hide lg-hide overflow-hidden" role="navigation" data-enter-from="top">
+<div class="header--offcanvas fixed top-0 md-hide lg-hide overflow-hidden flex flex-wrap items-center justify-center fluid" role="navigation" data-enter-from="top">
   <div class="header__wrapper">
     <?php wp_nav_menu(array('theme_location'=>'primary', 'menu_class' => 'menu menu--primary m0 p0')); ?>
   </div>

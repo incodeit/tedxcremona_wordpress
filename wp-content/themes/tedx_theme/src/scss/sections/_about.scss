@@ -5,51 +5,62 @@
   margin: auto;
   position: relative;
   max-width: 80rem;
-  
-  
+
+
   .section,
   .section__about-wrapper {
     display: flex;
     flex-direction: row;
     .section__abstract-wrapper {
-      border-bottom: 2px solid $c--primary; 
+      
+      @media (min-width: 650px) {
+        border-bottom: 2px solid $c--primary;
+      }
+
       .section__abstract {
-        font-size: $font--120;
+        font-size: calc(1rem + 0.25vw);
         font-weight: lighter;
         line-height: $font--150;
      }
 
-    
      &-home {
       border: none;
       .section__abstract {
-        font-size: $font--120;       
+        font-size: $font--120;
         font-weight: lighter;
         line-height: $font--150;
      }
      }
     }
       .section__title {
-      text-align: left;
-      color: $c--primary;
-      font-size: $font--220;
-      padding: .8rem;
-      line-height: 2.2rem;
-      border-bottom: 2px solid $c--primary;
-      
+        text-align: left;
+        color: $c--primary;
+        font-size: calc(1.25rem + 0.5vw);
+        padding: .8rem;
+        padding-left: 0;
+        line-height: 112%;
+        border-bottom: 2px solid $c--primary;
+        position: relative;
+        margin-top: 1.35rem;
+
+
         &:before {
           content:" ";
           background-image: url("./../../../assets/title_image_x.png");
           background-repeat: no-repeat;
-          left: 0;
-          top: calc(auto + 10px);
+          background-size: contain;
+          left: -4rem;
+          top: 17px;
           position: absolute;
-          height: 57px;
-          width: 55px;
+          height: 50px;
+          width: 50px;
+          display: none;
+
+          @media (min-width: 650px) {
+            display: block;
+          }
         }
-      
-     
-      
+
     }
 
     @media only screen and (max-width: 900px) {
@@ -77,9 +88,12 @@
 }
 
 .section--decoration {
+  margin-top: calc(1rem + 3vw);
+  margin-bottom: calc(1rem + 3vw);
   img {
     object-fit: cover;
+    width: 100%;
     height: 100px;
   }
-  
+
 }

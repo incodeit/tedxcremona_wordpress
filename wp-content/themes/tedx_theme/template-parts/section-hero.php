@@ -1,19 +1,10 @@
-
 <?php
-  $hero_image = get_the_post_thumbnail_url();
+  $hero_image = get_sub_field('hero_image');
+  $hero_image_portrait = get_sub_field('image_portrait');
+  $highlights_reference = get_sub_field('highlights_reference');
 ?>
-<?php if (is_page_template('page-templates/homepage.php')):?>
-    <section class="section section--hero section--home-hero max-width-2 mx-auto ">
-      <ul class="section__container m0 p0 list-reset">
-        <img class="contain-image" src="<?php echo $hero_image;?>" alt="Hero Image Logo" >
-      </ul>
-    </section>
-  
-<?php else:?>
-  <section class="section section--hero section--common-hero max-width-2 mx-auto pt4 pb1">
-    <div class="section__container m0 p0 list-reset">
-      <img class="contain-image" src="<?php echo $hero_image;?>" alt="Hero Image Logo">
-    </div>
-  </section>
-<?php endif;?>
 
+<section class="section section--hero section--home-hero">
+  <img class="contain-image sm-hide xs-hide" src="<?php echo $hero_image['url'];?>" alt="" >
+  <img class="contain-image md-hide lg-hide" src="<?php echo $hero_image_portrait['url'];?>" alt="" >
+</section>

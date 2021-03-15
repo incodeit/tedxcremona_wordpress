@@ -1,7 +1,7 @@
-<?php 
+<?php
     $image = get_sub_field('decoration_image');
 ?>
 
 <div class="section--decoration">
-    <?php echo responsive_image($image,'contain-image'); ?>
+    <img class="contain-image fluid" src="<?php echo $image['url']; ?>" alt="">
 </div>

@@ -4,12 +4,10 @@
 <section class="section section--promoted-events">
   <div class="container section__container">
     <div class="clearfix">
-      <div class="event-carousel mb4">
-          <?php foreach( $event as $post ): 
+      <div class="event-carousel flex flex-wrap justify-center md-mb4">
+          <?php foreach( $event as $post ):
             setup_postdata($post); ?>
-            <div class="carousel-item mx-auto  ">
               <?php get_template_part('template-parts/preview', 'event'); ?>
-            </div>
           <?php endforeach; ?>
         </div>
       </div>
@@ -17,5 +15,5 @@
   </div>
     <?php wp_reset_postdata(); ?>
 </section>
+<div class="section__line"></div>
 <?php endif ?>
-

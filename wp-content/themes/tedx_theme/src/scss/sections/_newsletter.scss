@@ -2,21 +2,21 @@
   ----------------------------- */
 
 .section--newsletter {
-
   .section__newsletter-title {
-
     h1 {
       font-size: $font--220;
       color: $c--primary;
     }
   }
 
-  .section__newsletter-submit {
+  #email {
+    min-width: 20rem;
+  }
 
+  .section__newsletter-submit {
     button{
       @include submit-button();
       transition: .2s;
-
       &:hover {
         cursor: pointer;
         opacity: .8;
@@ -27,8 +27,7 @@
   .section__newsletter-placeholder {
 
     input {
-      @include input-form();  
-      
+      @include input-form();
     }
   }
 }
