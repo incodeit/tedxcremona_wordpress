@@ -10,7 +10,7 @@
       </a>
     </div>
 
-    <div class="header__menu-wrapper col-8 px2 xs-hide sm-hide pb1">
+    <div class="header__menu-wrapper col-8 px2 xs-hide sm-hide">
       <nav class="header__nav" role="navigation">
         <?php wp_nav_menu( array('theme_location' => 'primary', 'menu_class' => 'menu menu--primary m0 p0 right block--navbar')); ?>
       </nav>
