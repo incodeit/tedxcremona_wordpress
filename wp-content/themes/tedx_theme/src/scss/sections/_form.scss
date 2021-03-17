@@ -5,9 +5,10 @@
 .section--contact{
 
   .section__contact-form {
-
     .title {
-      font-size: $font--220;
+      margin-top: 1.3rem;
+      font-size: 32px;
+      font-weight: bold;
       color: $c--primary;
     }
     .wpcf7{

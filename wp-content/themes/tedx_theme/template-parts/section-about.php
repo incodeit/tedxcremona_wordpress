@@ -1,4 +1,4 @@
-<section class="section section--about container px2 py0 md-py4">
+<section class="section section--about container px2 py0 md-py0">
     <div class="section__about-container clearfix">
       <?php if( have_rows('columns') ): ?>
               <?php while( have_rows('columns') ) : the_row();

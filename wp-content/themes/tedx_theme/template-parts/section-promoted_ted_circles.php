@@ -12,7 +12,7 @@
        <div class="section__ted-circle-event-information">
             <a href="<?php echo get_the_permalink($event->ID); ?>"><h1 class="section__ted-circle-title pt3"><?php echo $title; ?></h1></a>
             <h3 class="section__ted-circle-event-title pt2 m0 p0"><?php echo get_the_title($event->ID); ?></h3>
-            <h3 class="section__ted-circle-event-date m0 p0"><?php echo get_field('event_datetime_from', $event->ID); ?></h3>
+            <h3 class="section__ted-circle-event-date m0 my2 p0"><?php echo get_field('event_datetime_from', $event->ID); ?></h3>
             <h3 class="section__ted-circle-event-subscription m0 p0"><?php echo $text; ?></h3>
        </div>
     </div>
