@@ -53,9 +53,18 @@ body:not(.home) {
 
 }
 .section--hero {
-  &.section--home-hero {
-
+  .image-mobile {
+    display: none;
   }
+  @media (max-width: 649px) {
+    .image-desktop {
+      display: none;
+    }
+    .image-mobile {
+      display: block;
+    }
+  }
+
   &.section--ted-circle {
     background-color: $c--primary;
   }

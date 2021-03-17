@@ -5,6 +5,6 @@
 ?>
 
 <section class="section section--hero section--home-hero">
-  <img class="contain-image sm-hide xs-hide" src="<?php echo $hero_image['url'];?>" alt="" >
-  <img class="contain-image md-hide lg-hide" src="<?php echo $hero_image_portrait['url'];?>" alt="" >
+  <img class="contain-image image-desktop px4" src="<?php echo $hero_image['url'];?>" alt="" >
+  <img class="contain-image image-mobile" src="<?php echo $hero_image_portrait['url'];?>" alt="" >
 </section>
