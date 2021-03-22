@@ -8,9 +8,10 @@
         $args = array(
           'orderby' => 'title',
           'order' => 'ASC',
-          'showposts' => -1,
+          'post_per_page' => -1,
           'post_type'=> 'partner',
-          'cat'=> $cat_id
+          'cat'=> $cat_id,
+          'numberposts'=> -1
 
         );
         $posts = get_posts($args);
@@ -23,9 +24,8 @@
               </div>
               <?php 
               endif;?>
-          <div class="section__category-wrapper fluid mb2 mx-auto">
-            
-              <div class="section__list flex flex-row m0  p0 justify-center ">
+          <div class="section__category-wrapper fluid mb2 mx-auto">            
+              <div class="section__list flex flex-wrap max-width-4 mx-auto m0  p0 justify-center ">
                 <?php 
                     foreach ($posts as $post):?> 
                       <div class="section__item  mb4 px2 ">

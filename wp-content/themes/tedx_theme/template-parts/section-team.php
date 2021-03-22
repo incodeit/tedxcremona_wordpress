@@ -3,6 +3,7 @@
   $args = array(
     'post_type'=> 'person',
     'cat' => 13,
+    'numberposts'=> -1
   );
 
   $posts = get_posts($args);
